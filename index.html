@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <title>Restaurants near you</title>
+  <link rel="stylesheet" href="/app/styles.css?v=1.0">
+  <link href="https://api.foursquare.com" rel="preconnect" crossorigin>
+  <link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body>
+  <div class="Wrapper">
+    <div class="App" id="app">
+      <div class="Empty">
+        <div class="Spinner App-loader">Loading...</div>
+      </div>
+    </div>
+  </div>
+  <script type="module">
+    import Init from './app/app.js';
+    document.addEventListener('DOMContentLoaded',() => {
+      Init();
+    });
+  </script>
+</body>
+</html>

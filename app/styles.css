@@ -1,0 +1,403 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #667;
+    margin: 0;
+    padding: 0;
+    font: normal 100%/1.5 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin: 1rem 0;
+}
+
+p,
+li,
+span {
+    font-size: 1.6rem;
+}
+
+h1,
+h3 {
+    color: #212121;
+    font-weight: 400;
+}
+
+li {
+    line-height: 1.5;
+}
+
+a {
+    color: #14509F;
+    text-decoration: none;
+    transition: .2s color ease;
+}
+
+a:hover {
+    color: #0B1B36;
+    text-decoration: underline;
+}
+
+.Subtitle {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 2rem 0 1rem;
+}
+
+.Button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    transition: .2s color ease, .2s border-color ease;
+}
+
+.Button[disabled] {
+    opacity: .21;
+}
+
+.Button--primary {
+    border: 1px solid #14509F;
+    color: #14509F;
+    display: inline-block;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.Button--primary:hover {
+    color: #0B1B36;
+    border-color: #0B1B36;
+}
+
+.Button--link {
+    color: #14509F;
+}
+
+.Button--link:hover {
+    text-decoration: underline;
+}
+
+.Button--link.is-active {
+    color: #0B1B36;
+    pointer-events: none;
+}
+
+.Filter {
+    margin: 1.5rem 0 0;
+}
+
+.Header {
+    font-size: 0;
+    vertical-align: middle;
+}
+
+.Header-item {
+    color: #212121;
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-right: .82rem;
+}
+
+.Header-input {
+    border: none;
+    font-family: "Helvetica Neue", "Helvetica", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 0.5rem;
+    padding: 0 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.Empty {
+    font-size: 1.6rem;
+    margin: 25vh 0;
+    text-align: center;
+}
+
+.Price-off {
+    opacity: .2;
+}
+
+.Price-current {
+    opacity: 1;
+}
+
+.Venue-name {
+    margin: 1.5rem 0 1rem;
+    text-align: center;
+}
+
+@media (min-width: 40em) {
+    .Venue-name {
+        text-align: left;
+    }
+}
+
+.Venue-icon {
+    background: #555;
+    border-radius: 16px;
+    display: inline-block;
+    height: 21px;
+    line-height: 21px;
+    padding: 2px;
+    vertical-align: middle;
+    text-align: center;
+    width: 21px;
+}
+
+.Venue-iconPhoto {
+    display: inline-block;
+    height: 21px;
+    line-height: 21px;
+    width: 21px;
+}
+.Venue-category {
+    margin: .2rem 0;
+}
+
+.Venue-categoryName {
+    line-height: 32px;
+    vertical-align: middle;
+}
+
+.Venue-photoContainer {
+    height: 135px;
+    width: 180px
+}
+
+.Venue-photo {
+    border-radius: 3px;
+    height: 135px;
+    width: 180px
+}
+
+.Venue-hours,
+.Venue-address {
+    margin: .1rem 0;
+}
+
+.Venues-item {
+    border-top: 1px solid #ddd;
+    clear: left;
+    margin: 1rem 0 2rem 0;
+}
+
+.List {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.List--inline li {
+    display: inline-block;
+    padding-right: .5rem;
+}
+
+.List--inline li:after {
+    content: ",";
+}
+
+.List--inline .List-item--clean:after,
+.List--inline li:last-child:after {
+    content: "";
+}
+
+.Details-desc {
+    margin: 0;
+    padding: 0;
+}
+
+.Details-descItem {
+    display: inline-block;
+    padding-right: .5rem;
+}
+
+.Details-descItem:after {
+    content: "\00b7";
+    padding-left: .5rem;
+}
+
+.Details-descItem:last-child:after {
+    content: "";
+    padding-left: 0;
+}
+
+.Grid {
+    display: block;
+    font-size: 0;
+    margin: -.75rem;
+    padding: 0;
+}
+
+.Grid--withGutter {
+    margin: -.75rem;
+}
+
+.Grid-cell {
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: .75rem;
+    vertical-align: top;
+    width: 100%;
+}
+
+@media (min-width: 30em) {
+    .Cell-1of3 {
+        width: 50%
+    }
+}
+
+@media (min-width: 40em) {
+    .Cell-1of2 {
+        width: 50%;
+    }
+
+    .Cell-1of3 {
+        width: calc(100%/3)
+    }
+
+    .Cell-2of7 {
+        width: calc(2/7*100%)
+    }
+
+    .Cell-5of7 {
+        width: calc(5/7*100%)
+    }
+}
+
+.Wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 19px;
+    text-align: left;
+}
+
+.Error {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.u-color--primary {
+    color: #212121;
+}
+
+.u-text--center {
+    text-align: center;
+}
+
+.App-loader {
+    margin: 25vh 0;
+}
+
+
+/* Media Element */
+.Media {
+   overflow: hidden;
+}
+
+/* Media's Elements */
+.Media-object {
+    text-align: center;
+}
+
+@media (min-width: 40rem) {
+    .Media-object {
+        float: left;
+        padding-right: 1rem;
+        text-align: left;
+    }
+}
+
+@media (min-width: 40rem) {
+    .Media-photo {
+        display: block;
+    }
+}
+
+.Media-content {
+    overflow: hidden;
+}
+
+.Skipping {
+    font-size: 1.4rem;
+    height: 1px;
+    left: -10000px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+}
+
+.Skipping:focus {
+    height: auto;
+    position: static;
+    width: auto;
+}
+
+.Spinner,
+.Spinner:before,
+.Spinner:after {
+    border-radius: 50%;
+    width: 1.4em;
+    height: 1.4em;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation: load7 1.8s infinite ease-in-out;
+    animation: load7 1.8s infinite ease-in-out;
+}
+.Spinner {
+    color: #372325;
+    font-size: 10px;
+    margin: 21px auto 63px auto;
+    position: relative;
+    text-indent: -9999em;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+.Spinner:before,
+.Spinner:after {
+    content: '';
+    position: absolute;
+    top: 0;
+}
+.Spinner:before {
+    left: -2.1em;
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+.Spinner:after {
+    left: 2.1em;
+}
+@-webkit-keyframes load7 {
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 2.5em 0 -1.3em;
+    }
+    40% {
+        box-shadow: 0 2.5em 0 0;
+    }
+}
+@keyframes load7 {
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 2.5em 0 -1.3em;
+    }
+    40% {
+        box-shadow: 0 2.5em 0 0;
+    }
+}
